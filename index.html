@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Muhammad Shafiq Irfan Bin Mohd Naim — Software Engineering student, UMT. Full portfolio of projects and coursework." />
+  <meta name="theme-color" content="#161822" />
+  <title>Shafiq Irfan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Inline SVG sprite (symbols for icons) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M4 6h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2zm0 2v.01L12 13l8-4.99V8l-8 5-8-5z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 012 2v1l-4 3v4l4 3v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1l4-3V8L5 5V4a2 2 0 012-2z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></symbol>
+      <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4h3v16H6V4zm6 0h3v2.1A4 4 0 0118 4h3v8h-3v-4a2 2 0 10-4 0v8h-3V4zm-6 6H3V4h3v6z"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l4 2v6h14v-6l4-2L12 3zm0 2.2l6.3 3.4-6.3 3.4-6.3-3.4L12 5.2zM6 13v4h12v-4l-6 3.3L6 13z"/></symbol>
+      <symbol id="i-brief" viewBox="0 0 24 24"><path fill="currentColor" d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2h4a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2h4zm2 0h4V5h-4v2zm-4 4v10h16V11H6zm4 3h2v4H10v-4z"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 7l-5 5 5 5 1.4-1.4L5.7 12l4.2-4.2L8.5 7zm7 0l-1.4 1.4L18.3 12l-4.2 4.2L15.5 17l5-5-5-5zM14 4l-4 16h2l4-16h-2z"/></symbol>
+      <symbol id="i-stack" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zm0 8.5L4.7 8 12 4.5 19.3 8 12 10.5zm-8 3L2 14l10 5 10-5-2-1-8 4-8-4z"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19a5 5 0 01-1-9.9A7 7 0 0118 11a4 4 0 01-.2 8H6z"/></symbol>
+      <symbol id="i-wind" viewBox="0 0 24 24"><path fill="currentColor" d="M3 8h13a3 3 0 100-6M3 16h9a3 3 0 110 6M3 12h17a2 2 0 110 4"/></symbol>
+      <symbol id="i-test" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14v18H5V3zm2 2v14h10V5H7zm2 2h6v2H9V7zm0 4h6v2H9v-2zm0 4h4v2H9v-2z"/></symbol>
+      <symbol id="i-film" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v16H4V4zm2 2v3h3V6H6zm5 0v3h3V6h-3zm5 0v3h3V6h-3zM6 11v3h3v-3H6zm5 0v3h3v-3h-3zm5 0v3h3v-3h-3zM6 16v3h3v-3H6zm5 0v3h3v-3h-3zm5 0v3h3v-3h-3z"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L2 12h3v9h6v-6h6v6h6v-9h3L12 3z"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path fill="currentColor" d="M8 4h8v2h4v3a4 4 0 01-4 4h-.5A5.5 5.5 0 0110 18v2h4v2H6v-2h4v-2a5.5 5.5 0 01-5.5-5H4a4 4 0 01-4-4V6h4V4zm2 2v2H6v3a2 2 0 002 2h.2A3.5 3.5 0 0010 8.5V6zm4 0h2v2.5A3.5 3.5 0 0015.8 13H16a2 2 0 002-2V6h-4V6z"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11a3 3 0 100-6 3 3 0 000 6zm-8 1a4 4 0 110-8 4 4 0 010 8zm8 2c2.7 0 8 1.3 8 4v3H8v-3c0-2.7 5.3-4 8-4zM8 14c-2.2.5-4 1.5-4 3v3h8v-3c0-1.5-1.8-2.5-4-3z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6-6.3 4.6 2.3-7-6-4.6h7.6L12 2z"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1l1.8 6.2L20 9l-6.2 1.8L12 17l-1.8-6.2L4 9l6.2-1.8L12 1z"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path fill="currentColor" d="M5 20h14v-2H5v2zm7-18l-5.5 5.5h3.5V16h4V7.5h3.5L12 2z"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <a class="skip" href="#objective">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top"><svg class="ico" aria-hidden="true"><use href="#i-spark"/></svg> MSI</a>
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Page">
+          <a href="#objective">Objective</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects" title="Academic projects">Projects</a>
+          <a href="#life">Activities</a>
+          <a href="#honors">Honors</a>
+          <a href="#refs">References</a>
+          <a class="nav-cv" href="#cv">Résumé</a>
+        </nav>
+        <details class="mob-nav">
+          <summary class="mob-nav-sum mono">Menu</summary>
+          <div class="mob-nav-links">
+            <a href="#objective">Objective</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects" title="Academic projects">Projects</a>
+            <a href="#life">Activities</a>
+            <a href="#honors">Honors</a>
+            <a href="#refs">References</a>
+            <a href="#cv" class="nav-cv">Résumé</a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-visual">
+        <div class="avatar avatar-photo">
+          <img src="assets/img/profile.png" width="192" height="192" loading="eager" decoding="async" alt="Professional headshot of Muhammad Shafiq Irfan Bin Mohd Naim in formal attire." />
+        </div>
+        <div class="hero-badges">
+          <span class="pill"><svg class="ico sm"><use href="#i-cap"/></svg> Universiti Malaysia Terengganu</span>
+          <span class="pill"><svg class="ico sm"><use href="#i-code"/></svg> Software Engineering</span>
+          <span class="pill"><svg class="ico sm"><use href="#i-cloud"/></svg> Full-Stack</span>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <h1 class="hero-name">Muhammad Shafiq Irfan <span class="hero-pat">Bin Mohd Naim</span></h1>
+        <p class="hero-role">Bachelor of Computer Science (Software Engineering) with Honours</p>
+        <ul class="contact-chips">
+          <li><a href="tel:+60183665545"><svg class="ico sm"><use href="#i-phone"/></svg> +6018-3665545</a></li>
+          <li><a href="mailto:shafiqnaeim@gmail.com"><svg class="ico sm"><use href="#i-mail"/></svg> shafiqnaeim@gmail.com</a></li>
+          <li><span class="chip-static"><svg class="ico sm"><use href="#i-pin"/></svg> Pasir Gudang, Johor</span></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-shafiq-irfan-mohd-naim-94abaa381/" rel="noopener noreferrer"><svg class="ico sm"><use href="#i-in"/></svg> LinkedIn</a></li>
+          <li><a href="#cv"><svg class="ico sm"><use href="#i-download"/></svg> Résumé</a></li>
+        </ul>
+        <p class="hero-note">This page lists <strong>academic &amp; group projects</strong>. <a href="#cv">Download my Resume</a> below.</p>
+      </div>
+    </section>
+
+    <section class="panel" id="objective">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-brief"/></svg></span>
+        <div>
+          <h2 class="panel-title">Career objective</h2>
+          <p class="panel-sub mono">How I want to grow</p>
+        </div>
+      </div>
+      <div class="panel-body prose">
+        <p>
+          Dedicated and motivated Software Engineering student looking for an <strong>internship</strong> to apply academic knowledge to real-world challenges.
+          Strong foundation in <strong>full-stack development</strong>, algorithm design, and software architecture. Eager to be involved in the full
+          <strong>software development lifecycle (SDLC)</strong>, gain hands-on experience in a cooperative professional environment, and improve coding craft.
+          Passionate about building <strong>reliable software</strong> that delivers meaningful results.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel" id="education">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-cap"/></svg></span>
+        <div>
+          <h2 class="panel-title">Education</h2>
+          <p class="panel-sub mono">Universiti Malaysia Terengganu</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <article class="tl-card">
+          <div class="tl-date mono">Oct 2023 – Mar 2027</div>
+          <h3 class="tl-title">Bachelor of Computer Science (Software Engineering) with Honours</h3>
+          <p class="tl-meta">Kuala Nerus, Terengganu</p>
+          <ul class="tl-list">
+            <li><strong>CGPA:</strong> 3.48 / 4.00</li>
+            <li><strong>MUET:</strong> Band 4.0</li>
+          </ul>
+          <div class="course-grid" aria-label="Relevant coursework">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Web Application</span>
+            <span class="chip">Quality Assurance</span>
+            <span class="chip">Internet of Things (IoT)</span>
+            <span class="chip">Database</span>
+            <span class="chip">Data Structures &amp; Algorithms</span>
+            <span class="chip">Software Requirements Engineering</span>
+            <span class="chip">Software Testing</span>
+            <span class="chip">Networking</span>
+            <span class="chip">Cybersecurity</span>
+          </div>
+        </article>
+        <article class="tl-card">
+          <div class="tl-date mono">Jul 2022 – Jul 2023</div>
+          <h3 class="tl-title">STEM Foundation</h3>
+          <p class="tl-meta">Kuala Nerus, Terengganu</p>
+          <ul class="tl-list">
+            <li><strong>CGPA:</strong> 3.50 / 4.00</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="skills">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-stack"/></svg></span>
+        <div>
+          <h2 class="panel-title">Skills</h2>
+          <p class="panel-sub mono">Aligned with my Resume</p>
+        </div>
+      </div>
+      <div class="skill-board">
+        <div class="skill-card">
+          <h3><svg class="ico sm"><use href="#i-code"/></svg> Programming languages</h3>
+          <p>Java, Python, JavaScript, SQL (MySQL / MariaDB style), HTML, CSS, MicroPython (Raspberry Pi Pico).</p>
+        </div>
+        <div class="skill-card">
+          <h3><svg class="ico sm"><use href="#i-stack"/></svg> Frameworks &amp; libraries</h3>
+          <p>Spring Boot, Spring Data JPA, Express, React, Bootstrap, Java Servlets, JSP.</p>
+        </div>
+        <div class="skill-card">
+          <h3><svg class="ico sm"><use href="#i-cloud"/></svg> Tools &amp; platforms</h3>
+          <p>Maven, Vite, npm, Docker, Docker Compose, Apache Tomcat, IntelliJ IDEA, NetBeans, Visual Studio Code, Thonny, MySQL, MariaDB, phpMyAdmin, XAMPP, Git, Selenium IDE, Selenium, Visual Paradigm (UML), Cisco Packet Tracer, Kali Linux, Microsoft Project, Weka, ToyyibPay, Raspberry Pi Pico.</p>
+        </div>
+        <div class="skill-card">
+          <h3><svg class="ico sm"><use href="#i-users"/></svg> Human languages</h3>
+          <p>English, Malay.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="projects">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-stack"/></svg></span>
+        <div>
+          <h2 class="panel-title">Academic projects</h2>
+          <p class="panel-sub mono">FYP, Coursework &amp; Group Projects</p>
+        </div>
+      </div>
+      <p class="proj-intro">
+        Highlights that appear on my résumé sit here next to other assessed work so recruiters can see the full story—stack, scope, and outcomes—without a cramped two-page PDF.
+      </p>
+      <div class="proj-featured">
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-home"/></svg></span>
+            <div>
+              <h3 class="pf-title">MySewa — House rental system for students <span class="tag mono">FYP</span></h3>
+              <p class="pf-date mono">Jul 2026</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Spring Boot · Spring Data JPA · JWT · React 19 · Vite · MySQL 8 · Docker Compose · ToyyibPay (sandbox)</p>
+          <ul class="pf-bullets">
+            <li>Built a full-stack rental prototype for <strong>student–landlord</strong> workflows near campus: secure authentication, profiles, property listings with search and filters, rental applications with status tracking, reviews and ratings, and a separate <strong>admin</strong> area for accounts, campus settings, and dashboard statistics.</li>
+            <li>Implemented <strong>ToyyibPay sandbox</strong> billing and callbacks with persisted financial transactions, plus manual deposit channels and a <strong>downloadable rental agreement (HTML)</strong> from accepted applications—aligned with documented FYP scope and UML use cases.</li>
+            <li>Delivered as a <strong>Spring Boot REST API</strong> (JPA, JWT), a <strong>React (Vite) SPA</strong> with React Router, <strong>MySQL 8</strong> persistence, and <strong>Docker Compose</strong> so the whole stack runs locally for demos and assessment.</li>
+            <li>Focused on reliability and clarity across the SDLC: API design, validation, role-based access, and a UI that stays responsive for typical tenancy tasks.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-wind"/></svg></span>
+            <div>
+              <h3 class="pf-title">PulseOn — Wind direction &amp; environmental monitoring</h3>
+              <p class="pf-date mono">Jan 2026</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">MicroPython · ThingSpeak · Raspberry Pi Pico · GPIO · I2C LCD · DHT22</p>
+          <ul class="pf-bullets">
+            <li>Designed an <strong>IoT wind-vane prototype</strong> on Raspberry Pi Pico using MicroPython to read four digital sensors, decode <strong>16-point compass directions</strong>, and keep a short <strong>direction history</strong> for trend-style feedback on device.</li>
+            <li>Added an <strong>I2C LCD</strong> for live direction readouts on site, plus optional <strong>DHT22</strong> reads for temperature and humidity when environmental context matters alongside wind.</li>
+            <li>Integrated <strong>ThingSpeak</strong> so direction (and optional weather) data can be viewed, logged, and monitored remotely—closing the loop from edge device to cloud.</li>
+            <li>Demonstrates a complete embedded narrative on constrained hardware: sensing, decoding, local display, and cloud telemetry suitable for coursework and portfolio demos.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-film"/></svg></span>
+            <div>
+              <h3 class="pf-title">MovieExplore — Movie platform API</h3>
+              <p class="pf-date mono">Jun 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Node.js · Express · MySQL · JWT · REST · Axios · express-validator</p>
+          <ul class="pf-bullets">
+            <li>Implemented a <strong>modular Express API</strong> backed by MySQL with bcrypt-style password handling, JWT-secured routes, <strong>axios</strong> calls to external movie metadata, and <strong>express-validator</strong> for consistent input hygiene.</li>
+            <li>Delivered feature slices for <strong>users</strong>, <strong>movie discovery</strong>, and <strong>watchlists</strong>, illustrating how authenticated services compose with third-party HTTP APIs.</li>
+            <li>Shipped a minimal <strong>static HTML/JS client</strong> to exercise the API end-to-end—useful for demos without a separate SPA build pipeline.</li>
+            <li>Shows how I structure routes, validation errors, and persistence so the same API could power a richer front end later.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-test"/></svg></span>
+            <div>
+              <h3 class="pf-title">Test DobiDemo System</h3>
+              <p class="pf-date mono">Jul 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Selenium IDE</p>
+          <ul class="pf-bullets">
+            <li>Authored Selenium IDE <code>.side</code> projects to automate regression paths against a <strong>demo laundry (“Dobi”) web application</strong>, covering realistic business flows end to end.</li>
+            <li>Scripted suites across <strong>customer</strong>, <strong>supplier</strong>, <strong>sales</strong>, and <strong>expense</strong> journeys—including logins, forms, and navigation—so repeated coursework demos stay consistent and less manual.</li>
+            <li>Practiced how to record, refactor, and re-run UI checks quickly in the IDE, then use those runs as evidence of breadth of coverage for the module submission.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-users"/></svg></span>
+            <div>
+              <h3 class="pf-title">Gym Management System</h3>
+              <p class="pf-date mono">Jun 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Java · Servlets · JSP · JDBC · MySQL · Tomcat-style deployment</p>
+          <ul class="pf-bullets">
+            <li>Developed a <strong>Java web application</strong> with Servlets and JSP covering registration, login, separate <strong>member and admin dashboards</strong>, membership plans, payments, and attendance tracking.</li>
+            <li>Mapped <strong>role-based flows</strong> in deployment descriptors and servlet routing, with JDBC-backed access and SQL scripts to initialise the gym database.</li>
+            <li>Mirrors how a small gym might operate digitally: members self-serve their area while staff manage plans, payments, and attendance from an admin view.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-cloud"/></svg></span>
+            <div>
+              <h3 class="pf-title">Food Ordering System</h3>
+              <p class="pf-date mono">Jun 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Node.js · Express · MySQL · HTML · CSS · JavaScript</p>
+          <ul class="pf-bullets">
+            <li>Built an <strong>Express</strong> backend with a pooled <strong>MySQL</strong> connection serving JSON for menus, order placement (line items stored as JSON), order lookup for payment/receipt, and <strong>staff login</strong> backed by a users table.</li>
+            <li>Delivered <strong>customer- and staff-facing HTML/JS pages</strong> (browse, cart-style selection, payment/receipt, staff console) as static files served alongside the API.</li>
+            <li>Demonstrates REST-style routing, middleware (CORS, body parsing), and an <strong>end-to-end ordering story</strong> from menu to receipt suitable for coursework demos.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-brief"/></svg></span>
+            <div>
+              <h3 class="pf-title">PatientCare: Database Design</h3>
+              <p class="pf-date mono">Jan 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">MySQL · HTML · CSS · JavaScript</p>
+          <ul class="pf-bullets">
+            <li>Produced <strong>normalisation coursework</strong> with before/after SQL scripts and supporting documentation showing how patient and clinic data moves toward cleaner relational structures.</li>
+            <li>Built a <strong>clinic-oriented front-end mock-up</strong> for patient intake, appointments, billing, doctors, and a data-style viewer section—linking UX narrative to the underlying schema story.</li>
+            <li>Shows how I connect <strong>database theory</strong> to a credible user-facing prototype rather than leaving SQL as abstract diagrams only.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-code"/></svg></span>
+            <div>
+              <h3 class="pf-title">Library Management System: Data Structure Algorithm</h3>
+              <p class="pf-date mono">Jan 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Java · Maven · BST · queue · quick/merge sort · graph ADT</p>
+          <ul class="pf-bullets">
+            <li>Implemented a <strong>Maven Java</strong> console simulation where a <strong>binary search tree</strong> backs book storage, a <strong>queue</strong> models borrow requests, and <strong>quick sort / merge sort</strong> runs demonstrate ordering on catalogue data.</li>
+            <li>Added a <strong>graph-based recommendation</strong> path between books for simple “related title” style output from the same entry point.</li>
+            <li>Packages classic <strong>DSA topics</strong> into one runnable narrative: catalogue operations, waiting-line behaviour, sorting, and light recommendation logic.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-brief"/></svg></span>
+            <div>
+              <h3 class="pf-title">Car Booking System: Object-Oriented Programming (OOP)</h3>
+              <p class="pf-date mono">Jun 2024</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Java · OOP · GUI · MariaDB · SQL</p>
+          <ul class="pf-bullets">
+            <li>Implemented a <strong>desktop GUI</strong> car-shop style prototype with login/registration, booking-oriented screens, and an <strong>object-oriented vehicle model</strong> (abstract vehicle type, concrete sedan/SUV-style subclasses).</li>
+            <li>Linked the GUI flows to a <strong>MariaDB schema</strong> for inventory, pricing, and staff-related tables so the coursework emphasises both OOP and persistence.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-stack"/></svg></span>
+            <div>
+              <h3 class="pf-title">EcoPath Lifestyle</h3>
+              <p class="pf-date mono">Jan 2025</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">HTML · CSS · Bootstrap · JavaScript</p>
+          <ul class="pf-bullets">
+            <li>Created a <strong>multi-page sustainability site</strong> with Bootstrap layout, navigation, and themed sections for tips, DIY projects, curated products, community engagement, events/news, and contact.</li>
+            <li>Included <strong>supporting design artefacts</strong> and a final group report bundle so the submission reads as a complete product plus documentation, not only HTML files.</li>
+            <li>Uses static front-end technologies with vendor Bootstrap and light animation assets for a polished marketing-style experience without a custom backend in that deliverable.</li>
+          </ul>
+        </article>
+        <article class="pf-card">
+          <header class="pf-head">
+            <span class="pf-icon"><svg class="ico"><use href="#i-code"/></svg></span>
+            <div>
+              <h3 class="pf-title">SJF CPU Scheduling</h3>
+              <p class="pf-date mono">Jun 2024</p>
+            </div>
+          </header>
+          <p class="pf-tech mono">Java · Shortest-job-first (SJF) scheduling</p>
+          <ul class="pf-bullets">
+            <li>Implemented <strong>shortest-job-first scheduling</strong> logic in Java as a compile-and-run console deliverable bundled for group assessment.</li>
+            <li>Used the exercise to show how scheduling choices affect wait and turnaround time in a controlled, testable program rather than only on paper.</li>
+            <li>Reinforces core OS-style thinking: ordering jobs, handling ties, and presenting results clearly in the console output.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="life">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-users"/></svg></span>
+        <div>
+          <h2 class="panel-title">Extra Curricular Activities</h2>
+          <p class="panel-sub mono">Beyond the classroom</p>
+        </div>
+      </div>
+      <ul class="life-list">
+        <li><span class="life-ico" aria-hidden="true">🏢</span> <strong>Cyberjaya, Selangor | Dec 2024 : </strong> Industry session with <strong>Finexus Group</strong> (IT careers exploration).</li>
+        <li><span class="life-ico" aria-hidden="true">🎮</span> <strong>Kuala Nerus, Terengganu | May 2024 – Jun 2025: </strong> Sukan Antara Fakulti (SAF24 &amp; SAF25), Gegarmaskk 2025, Vice Chancellor Cup 2024.</li>
+        <li><span class="life-ico" aria-hidden="true">🌏</span> <strong>Gambang, Pahang | Mar 2023 — IIUM:</strong> Sukan Asasi Malaysia (SAM23).</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="honors">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-trophy"/></svg></span>
+        <div>
+          <h2 class="panel-title">Honors &amp; Awards</h2>
+          <p class="panel-sub mono">Academic &amp; Esports</p>
+        </div>
+      </div>
+      <div class="honor-grid">
+        <div class="honor-card"><span class="honor-emoji" aria-hidden="true">🎓</span><p><strong>Dean’s List <br> </strong></strong> Semesters 4 &amp; 5 (undergraduate).</p></div>
+        <div class="honor-card"><span class="honor-emoji" aria-hidden="true">🎓</span><p><strong>Dean’s List <br> </strong> STEM Foundation programme.</p></div>
+        <div class="honor-card"><span class="honor-emoji" aria-hidden="true">🥇</span><p><strong>Gold</strong> <br>Gegarmaskk 2025, SAF24, MLBB Vice Chancellor Cup 2024.</p></div>
+        <div class="honor-card"><span class="honor-emoji" aria-hidden="true">🥈</span><p><strong>Runner-up</strong><br> SAF25, SAM23.</p></div>
+      </div>
+    </section>
+
+    <section class="panel" id="refs">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-users"/></svg></span>
+        <div>
+          <h2 class="panel-title">References</h2>
+          <p class="panel-sub mono"></p>
+        </div>
+      </div>
+      <div class="refs-grid">
+        <div class="ref-card">
+          <div class="ref-avatar mono" aria-hidden="true">SM</div>
+          <p class="ref-name">Assoc. Prof. Ts. Dr. Sharifah Mashita Syed Mohamad</p>
+          <p class="ref-role">Lecturer and Mentor<br />Faculty of Computer Science &amp; Mathematics,<br />Universiti Malaysia Terengganu</p>
+          <a class="ref-mail mono" href="mailto:s.mashita@umt.edu.my">s.mashita@umt.edu.my</a>
+        </div>
+        <div class="ref-card">
+          <div class="ref-avatar mono" aria-hidden="true">WN</div>
+          <p class="ref-name">Assoc. Prof. Ts. Dr. Wan Nural Jawahir Wan Yussof</p>
+          <p class="ref-role">Lecturer and FYP Supervisor<br />Faculty of Computer Science &amp; Mathematics,<br />Universiti Malaysia Terengganu</p>
+          <a class="ref-mail mono" href="mailto:wannurwy@umt.edu.my">wannurwy@umt.edu.my</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel-resume" id="cv">
+      <div class="panel-head">
+        <span class="panel-icon" aria-hidden="true"><svg class="ico"><use href="#i-brief"/></svg></span>
+        <div>
+          <h2 class="panel-title">Resume</h2>
+          <p class="panel-sub mono"></p>
+        </div>
+      </div>
+      <div class="resume-place">
+        <div class="resume-viewer">
+          <iframe class="resume-iframe" src="assets/files/Internship_Resume_Shafiq.pdf" title="Résumé PDF preview"></iframe>
+        </div>
+        <div class="resume-actions">
+          <a class="btn btn-pdf" href="assets/files/Internship_Resume_Shafiq.pdf" download="Internship_Resume_Shafiq.pdf"><svg class="ico sm"><use href="#i-download"/></svg> Download Resume (PDF)</a>
+          <a class="btn btn-secondary" href="assets/files/Internship_Resume_Shafiq.pdf" target="_blank" rel="noopener"><svg class="ico sm"><use href="#i-brief"/></svg> Open in Browser</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="mono">© <span id="y"></span> Muhammad Shafiq Irfan Bin Mohd Naim · Portfolio</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
